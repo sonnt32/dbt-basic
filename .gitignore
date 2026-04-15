@@ -1,0 +1,9 @@
+# Chặn file key bảo mật
+data/*.json
+profiles.yml
+
+# Chặn các file log và tạm của dbt
+target/
+dbt_packages/
+logs/
+*.db
