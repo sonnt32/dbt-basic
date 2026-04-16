@@ -1,0 +1,1 @@
+Trong thực tế, bạn sẽ gặp các đoạn code lặp đi lặp lại (như logic đổi múi giờ từ UTC sang +7). Thay vì viết lại 100 lần, bạn viết 1 lần vào thư mục macros và gọi nó ra như một hàm.
