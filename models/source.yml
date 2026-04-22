@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  # Nguồn cho dự án 1
+  - name: firebase_raw_ap # Thêm hậu tố dự án để duy nhất
+    project: annoying-puzzle
+    dataset: analytics_485408210
+    tables:
+      - name: events_intraday_all
+        identifier: "events_intraday_*"
+
+  # Nguồn cho dự án 2
+  - name: firebase_raw_bm2 # Thêm hậu tố dự án để duy nhất
+    project: brain-teaser-tricky-puzzle
+    dataset: analytics_512798678
+    tables:
+      - name: events_intraday_all
+        identifier: "events_intraday_*"

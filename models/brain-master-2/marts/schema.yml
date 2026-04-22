@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: brain-master-2-event_flatten_raw  # Phải khớp tên file mới
+    description: "Bảng flatten cho dự án Brain Master 2"
+    columns:
+      - name: event_date
+        tests:
+          - not_null

@@ -12,7 +12,7 @@ WITH source_flatten AS (
     /* Sử dụng hàm ref để tạo mối quan hệ tự động. 
        dbt sẽ tự hiểu bảng này phải chạy SAU bảng event_flatten_raw.
     */
-    SELECT * FROM {{ ref('event_flatten_raw') }}
+    SELECT * FROM {{ ref('annoying-puzzle-event_flatten_raw') }}
     
     WHERE 1=1
     {% if is_incremental() %}

@@ -2,11 +2,15 @@ name: 'my_game_transform'
 version: '1.0.0'
 config-version: 2
 
-profile: 'my_game_dbt_profile' # Phải khớp với tên trong profiles.yml
+profile: 'my_game_dbt_profile'
 
 model-paths: ["models"]
 
 models:
-  my_game_transform:
-    marts:
-      materialized: table # Mặc định các model trong folder marts sẽ là table
+  my_game_transform: # Tên project dbt
+    annoying-puzzle: # Tên thư mục dự án 1
+      marts:
+        materialized: table
+    brain-master-2:  # Tên thư mục dự án 2
+      marts:
+        materialized: table

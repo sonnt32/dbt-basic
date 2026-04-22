@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: event_flatten_raw
+  - name: annoying-puzzle-event_flatten_raw
     description: "Bảng dữ liệu Game Mobile đã được làm phẳng"
     columns:
       - name: surrogate_key

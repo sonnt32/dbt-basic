@@ -1,9 +1,0 @@
-version: 2
-
-sources:
-  - name: firebase_raw
-    project: annoying-puzzle
-    dataset: analytics_485408210
-    tables:
-      - name: events_intraday_all
-        identifier: "events_intraday_*" # Trỏ đến các bảng wildcard

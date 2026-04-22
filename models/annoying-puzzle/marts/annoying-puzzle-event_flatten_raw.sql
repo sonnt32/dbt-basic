@@ -64,7 +64,7 @@ WITH flattened_params AS (
       MAX(IF(key LIKE 'firebase_exp_%', value.string_value, NULL)) AS firebase_exp_raw
     FROM UNNEST(user_properties)) AS up
    
-FROM {{ source('firebase_raw', 'events_intraday_all') }}
+FROM {{ source('firebase_raw_ap', 'events_intraday_all') }}
 
 WHERE 1=1
 -- Tối ưu hóa chi phí bằng cách giới hạn _TABLE_SUFFIX
